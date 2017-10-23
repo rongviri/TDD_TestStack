@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_aw45cLZREeeiaZJnBAAwqQ" name="RootElement">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_bPQQcLZREeeiaZJnBAAwqQ">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_a88_gLZREeeiaZJnBAAwqQ" name="Interaction1">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_8CFF8LZUEeeiaZJnBAAwqQ" name="Lifeline" represents="_8C-6ULZTEeeiaZJnBAAwqQ" coveredBy="_JzEwoLZVEeeiaZJnBAAwqQ"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_9RrsoLZUEeeiaZJnBAAwqQ" name="Lifeline0" coveredBy="_JzFXsLZVEeeiaZJnBAAwqQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JzEwoLZVEeeiaZJnBAAwqQ" name="MessageSend" covered="_8CFF8LZUEeeiaZJnBAAwqQ" message="_JytkQLZVEeeiaZJnBAAwqQ"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_JzFXsLZVEeeiaZJnBAAwqQ" name="MessageRecv" covered="_9RrsoLZUEeeiaZJnBAAwqQ" message="_JytkQLZVEeeiaZJnBAAwqQ"/>
+    <message xmi:type="uml:Message" xmi:id="_JytkQLZVEeeiaZJnBAAwqQ" name="Message" receiveEvent="_JzFXsLZVEeeiaZJnBAAwqQ" sendEvent="_JzEwoLZVEeeiaZJnBAAwqQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_bK-0cLZREeeiaZJnBAAwqQ" name="Activity1" node="_gC3pELZUEeeiaZJnBAAwqQ">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_YYR78LZUEeeiaZJnBAAwqQ" name="Activity1"/>
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_ewyWILZUEeeiaZJnBAAwqQ" name="Activity2"/>
+    <node xmi:type="uml:CallBehaviorAction" xmi:id="_gC3pELZUEeeiaZJnBAAwqQ" name="CallBehaviorAction1" behavior="_ewyWILZUEeeiaZJnBAAwqQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_epEr8LZREeeiaZJnBAAwqQ" name="StackView">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8C-6ULZTEeeiaZJnBAAwqQ" name="stack" type="_ua2QsLZTEeeiaZJnBAAwqQ" association="_8CyGALZTEeeiaZJnBAAwqQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ua2QsLZTEeeiaZJnBAAwqQ" name="Stack"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_8CyGALZTEeeiaZJnBAAwqQ" memberEnd="_8C-6ULZTEeeiaZJnBAAwqQ _8C_hYLZTEeeiaZJnBAAwqQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_8C9sMLZTEeeiaZJnBAAwqQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_8C9sMbZTEeeiaZJnBAAwqQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_8C_hYLZTEeeiaZJnBAAwqQ" name="stackview" type="_epEr8LZREeeiaZJnBAAwqQ" association="_8CyGALZTEeeiaZJnBAAwqQ"/>
+  </packagedElement>
+</uml:Model>
