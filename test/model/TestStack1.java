@@ -19,6 +19,23 @@ public class TestStack1 {
 		s = null;
 	}
 
+	@Test
+	public void testEmptyInitialStack(){
+		// 1. create new stack
+		
+		// 2. get element from top of stack
+		Object topElm = s.top(); 
+		
+		// 3. check if top element == null ?
+		// yes -> test pass, no-> test fail
+		assertNull("New Stack must have no element on top!!",
+				topElm);
+		
+		
+		// 4. delete stack
+		
+	}
+
 
 	@Test
 	public void testLastInFirstOut(){
