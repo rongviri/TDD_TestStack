@@ -72,7 +72,7 @@ public class Stack1 implements IStack1 {
 	//last in first out, so the popped element will be extracted from the tail of the array.
 	public Object pop() {
 		if (counter == 0)
-			return false;
+			return null;
 
 		counter--;
 		return elements[counter];

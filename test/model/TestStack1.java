@@ -78,5 +78,35 @@ public class TestStack1 {
 		
 	}
 	
+	
+	@Test
+	public void testPushElmToTop(){
+		// 1. create stack with capacity = 1
+			s.setCapacity(1);
+		// 2. push 1 to stack
+			try {
+				s.push(new Integer(1));
+		// 3. check if top element must be not null.
+		// or check if the number of elements in stack
+		// must be greater than 0.
+				assertNotNull(s.top());
+				
+		// 4. check if element on top 
+		//    is equal to the pushed element.
+				int topElm = ((Integer)s.top()).intValue();
+				assertEquals(1, topElm);
+				
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				fail("test push element to top of a stack with capacity 1 "
+						+ "must not throw exception!!");
+			}
+		
+		
+		// 5. delete stack
+		
+	}
+
 
 }
